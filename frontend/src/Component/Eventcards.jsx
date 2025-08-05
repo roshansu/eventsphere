@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { useState, useEffect } from 'react'
 import EventcardsShimmer from './Shimmer/EventcardsShimmer'
-import Tags from './cardComponent/tags'
+import Tags from './cardcomponent/tags'
 
 
 const Eventcards = ({hackathon, data, ind}) => {

@@ -4,9 +4,9 @@ import Eventdetailshimmer from './Shimmer/Eventdetailshimmer'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import data from '../utils/Dummy'
-import Tags from './cardComponent/tags'
-import Contactcard from './cardComponent/Contactcard'
-import Activitycard from './cardComponent/Activitycard'
+import Tags from './cardcomponent/tags'
+import Contactcard from './cardcomponent/Contactcard'
+import Activitycard from './cardcomponent/Activitycard'
 import { Link } from 'react-router'
 
 const Eventdetails = ({challenges}) => {
