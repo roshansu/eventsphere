@@ -81,7 +81,7 @@ const Login = () => {
               if(val.length<=6){
                   setOtp(val)
               }
-            }} id='otp' value={OTP} className={`  w-[400px] focus:bg-gray-300 border outline-none transition duration-200 border-gray-300 p-2 rounded-md bg-gray-100`} required={true} type="number" placeholder={`enter OTP`} />
+            }} id='otp' value={OTP} className={`  lg:w-[400px] focus:bg-gray-300 border outline-none transition duration-200 border-gray-300 p-2 rounded-md bg-gray-100`} required={true} type="number" placeholder={`enter OTP`} />
           </div>
         
         <p onClick={()=>setOtpLogin(otpLogin?false:true)} className={`text-base mt-3 text-green-600 mb-3 cursor-pointer font-medium underline`}>{otpLogin?'Login with password':'Login with OTP'}</p>
