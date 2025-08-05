@@ -7,9 +7,9 @@ const Host = ({isEvent}) => {
   const [active, setActive] = useState(true);
   
   return (
-    <div className='pt-32  pb-16 relative  flex justify-center gap-6'>
-     <div className='ml-32 px-6'>
-        <div className='text-2xl font-bold flex items-center gap-6'>
+    <div className='lg:pt-32 py-16 lg:pb-16 relative  flex justify-center gap-6'>
+     <div className='lg:ml-32 px-6'>
+        <div className='lg:text-2xl hidden font-bold lg:flex items-center gap-6'>
           <p className='text-[#0d1b2a]'>Organize your {isEvent?'Challenges':'events'} in one place</p>
           <i className="fa-regular text-3xl animate-pulse fa-calendar text-[#0d1b2a]"></i>
         </div>

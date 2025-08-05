@@ -50,12 +50,12 @@ const Login = () => {
   }
 
   return (
-  <div className='pt-32 mb-16 flex justify-center'>
+  <div className='lg:pt-32 lg:mb-16 py-16 lg:px-0 px-3 flex justify-center'>
     <form onSubmit={handleHost} className=' mt-8 text-lg bg-white p-4 border border-gray-300 shadow-sm rounded-lg' action="">
         <p className='text-2xl text-[#093FB4] underline font-bold text-center'>Login now</p>
           <div className='flex flex-col gap-2'>
             <label htmlFor="email">Email*</label>
-            <input onChange={handlesignup} id='email' className='w-[400px] focus:bg-gray-300 border outline-none transition duration-200 border-gray-300 p-2 rounded-md bg-gray-100' required={true} type="email" placeholder={`enter your email`} />
+            <input onChange={handlesignup} id='email' className='lg:w-[400px] focus:bg-gray-300 border outline-none transition duration-200 border-gray-300 p-2 rounded-md bg-gray-100' required={true} type="email" placeholder={`enter your email`} />
           </div>
 
           <div className={` ${otpLogin?'hidden':'block'} flex mt-3  flex-col gap-2`}>
@@ -67,7 +67,7 @@ const Login = () => {
                 }
                 handlesignup(e);
             }} id='password' 
-            className={`w-[400px]  ${info?'border-red-500':'border-gray-300'} focus:bg-gray-300 border outline-none transition duration-200  p-2 rounded-md bg-gray-100`} required={true} type="password" placeholder={`***********`} />
+            className={` lg:w-[400px]  ${info?'border-red-500':'border-gray-300'} focus:bg-gray-300 border outline-none transition duration-200  p-2 rounded-md bg-gray-100`} required={true} type="password" placeholder={`***********`} />
             <p className='text-red-600 text-sm'>{info}</p>
           </div>
           
@@ -85,7 +85,7 @@ const Login = () => {
           </div>
         
         <p onClick={()=>setOtpLogin(otpLogin?false:true)} className={`text-base mt-3 text-green-600 mb-3 cursor-pointer font-medium underline`}>{otpLogin?'Login with password':'Login with OTP'}</p>
-        <Link to={'/signup'} className='text-base  text-blue-600 font-medium underline'>Don't have an account?</Link>
+        <Link to={'/signup'} className='text-base block text-blue-600 font-medium underline'>Don't have an account?</Link>
 
           
         <p className={`${hide?'inline-block':'hidden'} mr-[20%] text-[#FF3F33] font-medium text-base`} >Resend OTP after {count} second</p>

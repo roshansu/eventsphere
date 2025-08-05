@@ -43,7 +43,7 @@ const Nav = () => {
       >
         Projects
       </Link>
-        <i className="fa-solid text-base hidden lg:!hidden md:block pb-2 fa-bars"></i>
+        <Link to={'/signup'}><i className="fa-solid text-base hidden lg:!hidden md:block pb-2 fa-bars"></i></Link>
       </div>
       <div className='lg:flex hidden items-center gap-8'>
         <i className="fa-solid text-2xl fa-circle-user"></i>

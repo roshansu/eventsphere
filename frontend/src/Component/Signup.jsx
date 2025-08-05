@@ -51,7 +51,7 @@ const Signup = () => {
   }
 
   return (
-  <div className='pt-32 mb-16 flex justify-center'>
+  <div className='lg:pt-32 lg:mb-16 py-16 lg:px-0 px-2 flex justify-center'>
     <form onSubmit={handleHost} className=' mt-8 text-lg bg-white p-4 border border-gray-300 shadow-sm rounded-lg' action="">
         <p className='text-2xl text-[#093FB4] underline font-bold text-center'>Signup now</p>
 
